@@ -29,7 +29,7 @@ public class IEXMessageDistroBuilder {
 	Histogram allUpdatesHisto = new Histogram(10000, 1);
 	Histogram levelUpdatesHisto = new Histogram(10000, 1);
 
-	private void readDEEPsample() throws PcapNativeException, InterruptedException, NotOpenException {
+	private void readDEEPsample() throws PcapNativeException {
 		final PcapHandle handle = Pcaps.openOffline("/home/optimus/Downloads/20240216_IEXTP1_DEEP1.0.pcap",
 				PcapHandle.TimestampPrecision.MICRO);
 

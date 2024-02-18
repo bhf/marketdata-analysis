@@ -23,11 +23,11 @@ public class IEXMessageDistroBuilder {
 		deepSample.readDEEPsample();
 	}
 
-	Histogram buyUpdatesHisto = new Histogram(100000, 1);
-	Histogram sellUpdatesHisto = new Histogram(100000, 1);
-	Histogram quoteUpdatesHisto = new Histogram(100000, 1);
-	Histogram allUpdatesHisto = new Histogram(100000, 1);
-	Histogram levelUpdatesHisto = new Histogram(100000, 1);
+	Histogram buyUpdatesHisto = new Histogram(10000, 1);
+	Histogram sellUpdatesHisto = new Histogram(10000, 1);
+	Histogram quoteUpdatesHisto = new Histogram(10000, 1);
+	Histogram allUpdatesHisto = new Histogram(10000, 1);
+	Histogram levelUpdatesHisto = new Histogram(10000, 1);
 
 	private void readDEEPsample() throws PcapNativeException, InterruptedException, NotOpenException {
 		final PcapHandle handle = Pcaps.openOffline("/home/optimus/Downloads/20240216_IEXTP1_DEEP1.0.pcap",

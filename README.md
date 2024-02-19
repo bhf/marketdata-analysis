@@ -14,7 +14,7 @@ Num samples: 300
     
 _**Please Note: Your mileage may vary**_
     
-Using the above hardware, I conduct a number of tests (some of which are found in jmh-playground):
+Using the above hardware, I conduct a number of tests (some of which are found in [jmh-playground](https://github.com/bhf/jmh-playground):
 
 * Aeron raw message rate just sending bytes of different sizes
 * Reading longs out of an Unsafe buffer
@@ -23,7 +23,7 @@ Using the above hardware, I conduct a number of tests (some of which are found i
 
 I also used iextrading4j with HDRHistogram to build distributions of the 
 number of relevant messages (price level updates and quotes) per packet. I used IEX as 
-the pcap data is freely available online (https://iextrading.com/trading/market-data/)
+the pcap data is [freely available online](https://iextrading.com/trading/market-data/)
 For that particular venue there is only approx 1% of packets where there are multiple messages. 
 
 In conclusion, I found reading bit packed fields much slower in comparison to just reading longs 
